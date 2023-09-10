@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking Registration</title>
+  <!-- Add the Bootstrap CDN links -->
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      height: 300%;
+      overflow: auto;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(#141e30, #243b55);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 295vh;
+    }
+    .login-box {
+      max-width: 1700px;
+      width: 90%;
+      padding: 100px;
+      background: rgba(0,0,0,.5);
+
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+      color: #fff;
+      margin: 0 auto;
+
+    }
+    
+        .login-box fieldset {
+      background: transparent;
+      border: 1px solid #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px; /* Increase margin for separation */
+    }
+    .login-box legend {
+      color: #03e9f4;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .login-box label {
+      font-size: 18px;
+    }
+        .login-box input[type="text"],
+    .login-box input[type="date"],
+    .login-box input[type="number"],
+    .login-box select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 2px solid #03e9f4;
+      background: transparent;
+      color: #fff;
+    }
+    .login-box input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .login-box button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #03e9f4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card login-box">
+      <div class="card-header bg-primary text-white">
+        <h1 class="text-center">Booking Form</h1>
+      </div>
+      <div class="card-body">
+        <form id="booking-form">
+          <fieldset>
+            <legend>Customer Information</legend>
+            <div class="mb-3">
+              <label for="customer-name" class="form-label">Name:</label>
+              <input type="text" id="customer-name" class="form-control" required="">
+            </div>
+            <div class="mb-3">
+              <label for="check-in-date" class="form-label">Check-in Date:</label>
+              <input type="date" id="check-in-date" class="form-control" required="">
+            </div>
+            <div class="mb-3">
+              <label for="total-days" class="form-label">Total Days:</label>
+              <input type="number" id="total-days" class="form-control" required="">
+            </div>
+            <div class="mb-3">
+              <label for="total-persons" class="form-label">Total Persons:</label>
+              <input type="number" id="total-persons" class="form-control" required="">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Room Details</legend>
+            <div class="mb-3">
+              <label for="room-type" class="form-label">Room Type:</label>
+              <select id="room-type" class="form-select">
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Suite Room</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="amenities" class="form-label">Amenities:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="amenities" id="ac" value="ac">
+                <label class="form-check-label" for="ac">AC</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="amenities" id="locker" value="locker">
+                <label class="form-check-label" for="locker">Locker</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Advance Payment</legend>
+            <div class="mb-3">
+              <label for="advance-amount">Advance Amount (₹):</label>
+              <input type="number" id="advance-amount" class="form-control" required=""><br>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Cost Summary</legend>
+            <div class="mb-3">
+              <label>Total Room Cost (₹):</label>
+              <span id="total-room-cost" class="price">28000</span><br>
+            </div>
+            <div class="mb-3">
+              <label>Total Amenities Cost (₹):</label>
+              <span id="total-amenities-cost" class="price">9100</span><br>
+            </div>
+            <div class="mb-3">
+              <label>Total Cost (₹):</label>
+              <span id="total-cost" class="price">37100</span><br>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional Charges</legend>
+            <div class="mb-3">
+              <label>Extra Person Cost (₹):</label>
+              <span id="extra-person-cost" class="price">1000</span><br>
+            </div>
+            <p class="note">Upto 2 People: No Change in Cost</p>
+            <p class="note">Per Day Cost for Extra Person: ₹1000/-</p>
+          </fieldset>
+          <fieldset>
+            <legend>Balance Amount</legend>
+            <div class="mb-3 price">
+              <label>Balance (₹):</label>
+              <span id="balance-amount">30300</span><br>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="C:\Users\chaud\OneDrive\html\script.js"></script>
+</body>
+</html>

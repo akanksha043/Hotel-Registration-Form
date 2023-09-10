@@ -1,0 +1,115 @@
+body {
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 295vh;
+  }
+  .login-box {
+    max-width: 1700px;
+    width: 90%;
+    padding: 100px;
+    background: rgba(0,0,0,.5);
+
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 auto;
+
+  }
+  
+      .login-box fieldset {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Increase margin for separation */
+  }
+  .login-box legend {
+    color: #03e9f4;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .login-box label {
+    font-size: 18px;
+  }
+      .login-box input[type="text"],
+  .login-box input[type="date"],
+  .login-box input[type="number"],
+  .login-box select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #03e9f4;
+    background: transparent;
+    color: #fff;
+  }
+  .login-box input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  .login-box button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #03e9f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .note {
+    font-size: 12px;;
+  }
+  
+  .price {
+    font-weight: bolder;
+  }
+  
+  #balance-amount {
+    font-size: 24px;
+  }
+  .form-check-input[type="checkbox"] {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px; }
+
+  .mb-3 input,
+  .mb-3 select {
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 30vw;
+    padding: 5px;
+  }
+  
+  .btn-primary {
+    width: 15vw;
+    padding: 1%;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    max-width: 650px;
+  }
+  
+  .card-header {
+    
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
